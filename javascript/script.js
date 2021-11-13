@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 if(4==9) {
     console.log('ok!');
@@ -30,4 +30,29 @@ switch ( num ) {
             console.log('nu de aceasta data');
             break;
 
+}
+
+let numar = 30;
+
+    while(numar < 35) {
+        console.log(numar);
+        numar++;
+    }
+
+let num2 = 66;
+
+do{
+
+    console.log(num2);
+    num2++;
+}
+while(num2 < 70);
+
+for (let i = 1; i < 10; i++){
+
+    if (i === 6){
+
+        continue;
+    }
+     console.log(i);
 }
