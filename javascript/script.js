@@ -1,22 +1,21 @@
-const numberOfFilms = prompt('Cite filme ati privit', "");
+"use strict";
 
-const personalMovieDB = {
+const numberOfFilms = prompt('Cite filme ai pivit');
+// console.log(numberOfFilms);
 
-    count: numberOfFilms,
-    movies: {},
-    actors:{},
-    genres: [],
-    privat: false
+   const personalMovieDB = {
+        count: numberOfFilms,
+        movies: {},
+        actors: {},
+        genres: [],
+        privat: false,
+    };
 
-};
-
-const a = prompt('Ultimul film privit',''),
-    b = prompt('Ce nota ii puneti', ''),
-    c = prompt('Ultimul film privit', ''),
-    d = prompt('Ce nota ii puneti', '');
-
+const a = prompt('Unul din ultimele filme privite'),
+      b = prompt('Ce nota ii puneti>?'),
+      c = prompt('Unul din ultimele filme privite'),
+      d = prompt('Ce nota ii puneti>?');   
 
 personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-
+personalMovieDB.movies[c] = d;     
 console.log(personalMovieDB);
