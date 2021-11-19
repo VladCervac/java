@@ -1,58 +1,22 @@
-"use strict";
+const numberOfFilms = prompt('Cite filme ati privit', "");
 
-if(4==9) {
-    console.log('ok!');
-} else {
-    console.log('Error');
-}
+const personalMovieDB = {
+
+    count: numberOfFilms,
+    movies: {},
+    actors:{},
+    genres: [],
+    privat: false
+
+};
+
+const a = prompt('Ultimul film privit',''),
+    b = prompt('Ce nota ii puneti', ''),
+    c = prompt('Ultimul film privit', ''),
+    d = prompt('Ce nota ii puneti', '');
 
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-// if(num < 49) {
-
-//     console.log('Eror');
-// } else if (num > 100) {
-//     console.log('Mult');
-// } else {
-//     console.log('ok')
-// }
-const num = 50;
-switch ( num ) {
-
-    case 101:
-        console.log('nui drept');
-        break;
-    case 49: 
-        console.log('aproape');
-        break;
-    
-        default:
-            console.log('nu de aceasta data');
-            break;
-
-}
-
-let numar = 30;
-
-    while(numar < 35) {
-        console.log(numar);
-        numar++;
-    }
-
-let num2 = 66;
-
-do{
-
-    console.log(num2);
-    num2++;
-}
-while(num2 < 70);
-
-for (let i = 1; i < 10; i++){
-
-    if (i === 6){
-
-        continue;
-    }
-     console.log(i);
-}
+console.log(personalMovieDB);
